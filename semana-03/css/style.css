@@ -96,11 +96,6 @@ aside {
     height: 1700px;
 }
 
-main {
-    float: left;
-
-}
-
 .menu, .contact-us {
     margin-top: 25px;
     margin-left: 15px;
@@ -142,3 +137,9 @@ main {
     border-bottom: 1px solid gray;
 
 }
+.title{
+    display: inline-block;
+    font-size: 40px;
+    margin-top: 16px;
+    margin-left: 100px;
+    vertical-align:top ;
