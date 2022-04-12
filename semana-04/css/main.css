@@ -58,6 +58,11 @@ main{
     text-align: center;
     margin-top: 1px;
 }
+figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* @media screen and (min-width: 768px){
     .anide-main{
