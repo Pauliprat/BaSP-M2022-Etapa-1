@@ -1,30 +1,65 @@
 .aside-main {
     display: flex;
     height: 100%;
-    width: 100%;
+    justify-content: center;
 }
-
 main{
+    display: flex;
+    width: 70%;
     font-family: 'Roboto', sans-serif;
-    width: 100%;
-}   
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 30px;
 
-.container {
-    
+}
+.conteiner{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    flex-direction: column;
+}
+.title-and-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-and-logo .logo{
+    order: 1;
+}
+.title-and-logo .title{
+    order: 2;
 }
 
 .logo img{
-    justify-content: center;
     width: 60px;
     height: 60px;
 }
+.title h1 {
+    font-size: 34px;
+    margin-left: 10px;
+    letter-spacing: 3px;
+}
+.title h3 {
+    font-size: 20px;
+    margin-left: 34px;
+    letter-spacing: 1px;
+}
+.presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .presentation img{
-    width: 100px;
+    width: 100%;
+    margin-top: 10%;
+}
+.presentation p {
+    text-align: center;
+    margin-top: 1px;
 }
 
-.logo-and-title{
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin-left: 10px;
-}
+/* @media screen and (min-width: 768px){
+    .anide-main{
+        widt
+} */

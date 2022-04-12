@@ -6,6 +6,7 @@ header {
     background-color: #50a780;
     font-family: 'Roboto', sans-serif;
     height: 50px;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -47,6 +48,7 @@ header .search .search-bar {
 header .search .search-icon {
     color: #ffffff;
 }
+
 
 /* Tablet */
 @media screen and (min-width: 768px){
