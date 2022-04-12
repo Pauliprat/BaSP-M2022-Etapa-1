@@ -1,24 +1,15 @@
 .aside-main {
     display: flex;
     height: 100%;
-    justify-content: center;
 }
 main{
     display: flex;
-    width: 70%;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     flex-direction: column;
     margin-top: 30px;
-    margin-left: 30px;
+}
 
-}
-.conteiner{
-    display: flex;
-    width: 70%;
-    margin: auto;
-    align-items: center;
-    flex-direction: column;
-}
 .title-and-logo{
     display: flex;
     align-items: center;
@@ -48,17 +39,33 @@ main{
 .presentation{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
 }
 .presentation img{
-    width: 100%;
     margin-top: 10%;
 }
 .presentation p {
     text-align: center;
     margin-top: 1px;
 }
-figure{
+.features{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.features .feature{
+    width: 50%;
+    margin-bottom: 40px;
+}
+.features .feature:last-child {
+    width: 100%;
+}
+
+.features figure{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,15 +74,75 @@ figure{
     width: 100px;
     font-size: 14px;
     text-align: center;
-    margin: 5%;
+    margin: auto;
 }
-img {
-    display: flex;
+.features figure img {
     width: 100px;
+    height: 80px;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+
+}
+.features figure label{
+    padding: 4px;
+}
+
+.questions{
+    display: flex;
     flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
 
 }
 
+.questions h4{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.questions ul{
+    margin-bottom: 15px;
+}
+
+.about-us{
+    width: 80%;
+    padding: 15px;
+    background-color: #e9e9e9;
+    border-radius: 20px;
+    margin: auto;
+    border: 1px solid black;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    margin-bottom: 20px;
+
+}
+
+.about-us h4{
+    font-size: 12px;
+    margin-bottom: 2px;
+
+}
+.about-us h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+p{
+    font-size: 10px;
+    margin: 10px;
+}
+.img1, .img2{
+   width: 100px;
+   margin-bottom: 5px;
+}
+
+.about-us .text-img1{
+    display: flex;
+}
+
+.about-us .text-img2{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
 /* @media screen and (min-width: 768px){
     .anide-main{
         widt
