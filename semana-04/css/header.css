@@ -61,14 +61,13 @@ header .search .search-icon {
         display: flex;
         order: 2;
         font-size: 16px;
-        margin-left: 40px;
     }
     header .navegate a {
         text-align: center;
         font-size: 17px;
         text-decoration: none;
         color: #000;
-        padding: 0 6px 0 6px;
+        padding: 0px 16px 0 16px;
     }
     header .navegate a:visited{
         color:#000

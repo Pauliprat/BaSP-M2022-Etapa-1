@@ -9,7 +9,6 @@ aside {
         display: flex;
         flex-direction: column;
         width: 20%;
-        height: 100%;
         padding-left: 15px;
         font-family: 'Roboto', sans-serif;
         background: linear-gradient(to bottom, #50a780,#50a780, #ffffff);
