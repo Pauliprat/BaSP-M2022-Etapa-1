@@ -280,12 +280,81 @@ h3 {
 }
 
 @media screen and (min-width: 1024px){
-    
-    .get-system-information {
-    display: flex;
-    align-self: center;
-    width: 80%;
-    margin-bottom: 15%;
-    font-weight: bold;
-    color: #373867;
+    .title-and-logo {
+        margin-right: 57%;
     }
+    .title h1 {
+        font-size: 34px;
+        margin-left: 10px;
+        letter-spacing: 3px;
+    }
+    .title h3 {
+        font-size: 18px;
+        margin-left: 34px;
+        letter-spacing: 1px;
+    }
+    
+    .features-questions{
+        display: flex;
+        width: 100%;
+        flex-direction: row-reverse;
+        padding: 30px 0 0px 100px;
+    }
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #50a780;
+        justify-content: center;
+        padding: 20px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .navigation .info {
+        padding: 0px 10%;
+        border-right: 1px solid black;
+        padding-right: 10%;
+    }
+    
+    .navigation .info:last-child {
+        border-right: 0;
+    }
+    
+    h3 {
+        font-size: 12px;
+        margin-bottom: 10x;
+    }
+    
+    .navigation ul a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 11px;
+    }
+    
+    .get-system-information{
+        display: none;
+        align-self: center;
+        width: 80%;
+        margin-bottom: 15%;
+        font-weight: bold;
+        color: #373867; 
+    }
+    
+    
+    .get-system-information{
+        display: flex;
+    }
+    .get-system-information h3{
+        padding: 1% 0%;
+        font-size: 25px;
+    }
+    .name-mail-contact{
+        display: flex;
+        flex-flow: column wrap;
+        width: 50%;
+        padding: 1% 2% 1% 0%;
+        font-size: 22px;
+    }
+    input, select, textarea{
+        border: 1px solid #373867;
+        border-radius: 4px;
+    }
+}
