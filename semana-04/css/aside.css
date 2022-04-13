@@ -70,9 +70,16 @@ aside {
     aside .address {
         margin-top: 8px;
         font-size: 14px;
-        padding-bottom: 70px;
-        background-color: ;
-    
+        padding-bottom: 100px;    
     }
+    button {
+        width: 90%;
+        background-color: #49A37B;
+        border-radius: 5px;
+        font-size: 13px;
+        color: #fff;
+        padding: 4%;
+        border: #000 1px solid;
+        }
 }
 

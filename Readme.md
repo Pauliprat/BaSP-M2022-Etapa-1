@@ -1,6 +1,6 @@
 # TRACKGENIX
 This is the readme for Trackenix done by Paulina Partes
-https://pauliprat.github.io/BaSP-M2022-Etapa-1/
+https://pauliprat.github.io/BaSP-M2022-Etapa-1/semana-04/
 ## Week 02: worck in .html file
 *We work on the structure and content of the page. Nothing of design.*
 
