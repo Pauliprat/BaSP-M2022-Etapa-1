@@ -1,4 +1,4 @@
-footer{
+footer {
     display: flex;
     width: 100%;
     padding: 16px 0;
@@ -15,13 +15,14 @@ span i {
     margin-bottom: 1%;
     color: gray;
 }
-.direc{
+.direc {
     color:#50a780;
 }
 
 @media screen and(min-width:768px) {
-    footer{
+    footer {
         font-size: 24px;
         justify-content: flex-end;
     }
 }
+

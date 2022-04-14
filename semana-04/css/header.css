@@ -7,7 +7,7 @@ header {
     font-family: 'Roboto', sans-serif;
     height: 50px;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 header .menu-icon {
@@ -35,19 +35,15 @@ header .buttons button {
     background-color: #ffffff;
     padding: 0 15px;
 }
-
 header .search {
-    display: flex;
-    margin-right: 30px;
+    display: none ;
 }
 
-header .search .search-bar {
-    display: none;
-}
 
-header .search .search-icon {
+.icon-mobile {
     color: #ffffff;
 }
+
 
 
 /* Tablet */
@@ -73,38 +69,97 @@ header .search .search-icon {
         color:#000
     }
 
+    header .buttons button {
+        border-style: none;
+        background-color: #ffffff;
+        padding: 0 40px;
+        color: #000;
+        font-size: 25px;
+        height: 35px;
+        width: 35%;
+    
+    }
+
     header .search {
-        order: 3;
-    }
-
-    header .search .search-bar {
-        position: relative;
-        display: flex;
-        width: 280px;
-    }
-
-    header .search .search-bar input {
-        width: 100%;
-        padding-left: 20px;
-        border: none;
-        border-radius: 200px;
-        font-size: 20px;
-    }
-
-    header .search .search-bar .fa-search {
-        position: absolute;
-        top: 4px;
-        right: 15px;
-        font-size: 14px;
-        color: gray
-    }
-
-    header .search .search-icon {
-        display: none;
+            order: 3;
     }
 
     header .buttons {
         order: 4;
+        width: 26%;
+    }
+    .search {
+        display: flex;
+        align-items: center;
+        background: white;
+        width: 17%;
+        justify-content: space-around;
+        padding: 7px;
+        border-radius: 200px;
     }
 
+    .search input {
+        border: none;
+        font-size: 20px;
+        width: 100%;
+    }
+    .search i {
+        font-size: 20px;
+        margin-bottom: 3px;
+        color: #373867;
+    }
+     .icon-mobile {
+         display: none;
+     }
+     header .search {
+        display: flex ;
+    }
+}
+
+@media screen and (min-width: 1024px){
+
+    header {
+        height: 70px;
+    }
+
+    header .menu-icon {
+        font-size: 30px;
+        margin-left: 25px;
+    }
+
+    header .navegate {
+        font-size: 26px;
+    }
+
+    header .navegate a {
+        font-size: 27px;
+        padding: 0px 16px 0 16px;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        background: white;
+        width: 17%;
+        justify-content: space-between;
+        padding: 10px 30px 10px 30px;
+        border-radius: 200px;
+        width: 20%;
+    }
+
+    .search input {
+        border: none;
+        font-size: 20px;
+        width: 100%;
+    }
+    .search i {
+        font-size: 20px;
+        margin-bottom: 3px;
+        color: #373867;
+    }
+
+    .icon-mobile {
+        display: none;
+    }
+    
 }

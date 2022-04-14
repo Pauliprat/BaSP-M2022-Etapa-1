@@ -16,7 +16,7 @@ aside {
     
     aside h4 {
         padding-top: 20px;
-        font-size: 20px;
+        font-size: 30px;
         padding-bottom: 15px;
         border-bottom: 1px solid #ED2626;
         width: 70%;
@@ -24,7 +24,7 @@ aside {
     
     aside .menu ul {
         padding-top: 10px;
-        padding-bottom: 50px;
+        padding-bottom: 60px;
     }
 
     aside .menu ul a {
@@ -32,7 +32,7 @@ aside {
         color: #000;
     }
     aside .menu li {
-        font-size: 18px;
+        font-size: 28px;
         margin: 10px 0px 10px 0px;
         text-shadow: 0px 1px 1px #505168;
         padding-bottom: 10px;
@@ -50,33 +50,33 @@ aside {
 
     aside .contact-us p {
         padding-top: 15px;
-        font-size: 16px;
-        line-height: 18px;
+        font-size: 26px;
+        line-height: 30px;
     }
 
     aside .contact-us i {
-        font-size: 14px;
+        font-size: 24px;
         color: #505168;
         text-shadow: 0px 1px 1px #505168;
     }
 
     aside .tracking {
         width:80%;
-        font-size: 14px;
-        padding-bottom: 8px;
+        font-size: 24px;
+        padding-bottom: 15px;
         border-bottom: 1px solid #CECACA;
     }
 
     aside .address {
-        margin-top: 8px;
-        font-size: 14px;
+        margin-top: 15px;
+        font-size: 24px;
         padding-bottom: 100px;    
     }
     button {
         width: 90%;
         background-color: #49A37B;
         border-radius: 5px;
-        font-size: 13px;
+        font-size: 23px;
         color: #fff;
         padding: 4%;
         border: #000 1px solid;
