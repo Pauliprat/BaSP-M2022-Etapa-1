@@ -11,8 +11,8 @@ console.log("Solution1_a:", total_1a);
 /* b. Crear dos variables de tipo String y concatenarlas guardando
 el resultado en una 3er variable.*/
 
- var string1_1b = "The cat is meowing";
- var string2_1b = "he is hungry.";
+ var string1_1b = "The cat's name is";
+ var string2_1b = "Otis";
  var stringtotoal_1b = string1_1b + "," + " " + string2_1b;
  console.log("Solution_1b:", stringtotoal_1b);
 
@@ -20,8 +20,8 @@ el resultado en una 3er variable.*/
  (cantidad de letras del string) guardando el resultado de la suma en
  una 3er variable (utilizar length). */
 
- var string1_1c = "The cat's name is";
- var string2_1c = "Otis";
+ var string1_1c = "Otis is meowing";
+ var string2_1c = "he is hungry.";
  var stringtotal_1c =  string1_1c + string2_1c;
 console.log("Solution_1c:", stringtotal_1c.length);
 
