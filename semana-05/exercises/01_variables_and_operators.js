@@ -24,3 +24,4 @@ el resultado en una 3er variable.*/
  var string2_1c = "Otis";
  var stringtotal_1c =  string1_1c + string2_1c;
 console.log("Solution_1c:", stringtotal_1c.length);
+
