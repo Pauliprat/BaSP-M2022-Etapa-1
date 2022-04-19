@@ -17,20 +17,20 @@ console.log("Solution 4a:", randomNumber_a);
     //  v. “Adulto” entre 31 y 60 años;
     //  vi. “Adulto mayor” entre 61 y 75 años;
     //  vii. “Anciano” si es mayor a 75 años.
-    var randomAge = Math.round(Math.random() * 100);
-        if (randomAge<2){
-            alert('Bebe');
-        } else if (randomAge>=2 && randomAge<=12){
-            alert('Niño');
-        } else if (randomAge>=13 && randomAge<=19){
-            alert('Adolecente'); 
-        } else if (randomAge>=20 && randomAge<=30){
-            alert('Joven');
-        } else if (randomAge>=31 && randomAge<=60){
-            alert('Adulto');
-        } else if (randomAge >=61 && randomAge<=75){
-            alert('Adulto mayor');
-        } else {
-            alert('Anciano');
-        }
-        console.log("Solution4b:", randomAge);
+var randomAge = Math.round(Math.random() * 100);
+  if (randomAge<2){
+      alert('Bebe');
+  } else if (randomAge>=2 && randomAge<=12){
+      alert('Niño');
+  } else if (randomAge>=13 && randomAge<=19){
+      alert('Adolecente'); 
+  } else if (randomAge>=20 && randomAge<=30){
+      alert('Joven');
+  } else if (randomAge>=31 && randomAge<=60){
+      alert('Adulto');
+  } else if (randomAge >=61 && randomAge<=75){
+      alert('Adulto mayor');
+  } else {
+      alert('Anciano');
+  }
+console.log("Solution 4b:", randomAge);
