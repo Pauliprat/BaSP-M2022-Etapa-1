@@ -1,0 +1,364 @@
+.aside-main {
+    display: flex;
+}
+main {
+    display: flex;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.title-and-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-and-logo .logo {
+    order: 1;
+}
+.title-and-logo .title {
+    order: 2;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+}
+.title h1 {
+    font-size: 34px;
+    margin-left: 10px;
+    letter-spacing: 3px;
+}
+.title h3 {
+    font-size: 18px;
+    margin-left: 34px;
+    letter-spacing: 1px;
+} 
+.presentation {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.presentation img {
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+}
+.presentation p {
+    text-align: center;
+    margin-top: 1px;
+    font-size: 12px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    margin: 0 10% 5%;
+}
+
+.feature {
+    border: 1px solid green;
+    background-color: #c8c8c8;
+    box-shadow: 0px 2px 2px 0px #7a7a7a;
+    text-align: center;
+    border-radius:2%;
+    margin: 2%;
+}
+ 
+.feature p {
+    font-size: 14px;
+    margin: 4%;
+}
+ .feature img {
+     box-shadow: 0px 2px 2px 0px #7a7a7a;
+     width: 100px;
+     height: 80px;
+}
+.questions {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.questions h4 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.questions ul {
+    margin-bottom: 15px;
+}
+
+.about-us {
+    width: 80%;
+    padding: 15px;
+    background-color: #e9e9e9;
+    border-radius: 20px;
+    margin: auto;
+    border: 1px solid black;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    margin-bottom: 60px;
+}
+.about-us h4 {
+    font-size: 12px;
+    margin-bottom: 2px;
+
+}
+.about-us h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+p{
+    font-size: 10px;
+    margin: 10px;
+}
+.img1, .img2 {
+   width: 100px;
+   margin-bottom: 5px;
+}
+
+.about-us .text-img1 {
+    display: flex;
+}
+
+.about-us .text-img2 {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+}
+.get-system-information {
+    display: none;
+}
+.navigation {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #50a780;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.navigation .info {
+    padding: 0 6%;
+    border-right: 1px solid black;
+    padding-right: 30px;
+}
+
+.navigation .info:last-child {
+    border-right: 0;
+}
+
+h3 {
+    font-size: 12px;
+    margin-bottom: 10x;
+}
+
+.navigation ul a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 11px;
+}
+@media screen and (min-width: 1024px) {
+
+    .title-and-logo {
+        display: flex;
+        align-items: center;
+        margin-right: 36%;
+        margin-bottom: 25px;
+    }
+    .title-and-logo {
+        margin-right: 57%;
+    }
+    .logo img {
+        width: 80px;
+    }
+    .title h1 {
+        font-size: 44px;
+        margin-left: 10px;
+        letter-spacing: 3px;
+    }
+    .title h3 {
+        font-size: 28px;
+        margin-left: 34px;
+        letter-spacing: 1px;
+    }
+    .presentation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .presentation img {
+        width: 60%;
+        margin-top: 0px;
+        margin: 0% 1% 3% 3%;
+    }
+    .presentation p {
+        text-align: start;
+        margin-top: 1px;
+        font-size: 26px;
+        width: 13%;
+    }
+
+    .features {
+        margin: 2% 0% 6% 14%;
+    }
+    .feature {
+        margin: 0;
+        margin-left: 2%;
+    }
+    
+    .feature img {
+        box-shadow: 0px 2px 2px 0px #7a7a7a;
+        width: 160px;
+        height: 120px;
+    }
+
+    .feature p {
+        font-size: 25px;
+    }
+    .questions {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        text-align: start;
+        flex-wrap: nowrap;
+        margin: 6%;
+    }
+    
+    .question h4 {
+        font-size: 35px;
+    }
+
+    .question li {
+    font-size: 25px;
+    }
+    .question :first-child {
+        margin-right: 1%;
+    }
+
+    .about-us h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .about-us h4 {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .img1, .img2 {
+        width: 20%;
+        margin-bottom: 5px;
+    }
+
+    p {
+        font-size: 30px;
+        margin: 10px;
+    }
+
+    .get-system-information{ 
+        display: flex;
+        margin: 0px 0 15% 28%;
+        font-weight: bold;
+        color: #373867;
+        flex-direction: column;
+    }
+    .get-system-information h3 {
+        padding: 1% 0;
+        font-size: 25px;
+        border-bottom: 1px solid #373867;
+        width: 83%;
+    }
+    .name-mail-contact {
+        display: flex;
+        width: 30%;
+        font-size: 20px;
+        padding: 1% 0 7% 0%;
+        border-bottom: 26%;
+        flex-wrap: wrap;
+        margin-right: 10%;
+
+    }
+    .name-mail-contact input, select, textarea{
+        border: 1px solid #7B61FF;
+        border-radius: 1%;
+        height: 70%;
+    }
+
+    textarea{
+        width: 100%;
+        font-size: 25px;
+    }
+
+    select{
+        height: 10%;
+        width: 83%;
+        font-size: 25px;
+    }
+
+    .name-mail-contact input{
+        height: 14%;
+        width: 100%;
+        margin-bottom: 18%;
+        margin-top: 8%;
+        font-size: 25px;
+    
+    }
+
+    form{
+        display: flex;
+    }
+
+    .text-area{
+        display: flex;
+        flex-direction: column;
+        width: 43%;
+        margin-top: 5%;
+        align-items: center;
+    }
+  
+    .text-area input {
+        background-color: #AACE9B;
+        width: 80%;
+        margin-top: 3%;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        padding: 1%;
+        font-size: 20px;
+    }
+    input[type="email" i] {
+       padding-bottom: 10%;
+
+    } 
+
+    input[type="submit" i] {
+        background: #aace9b;
+        border: none;
+        margin: 16px 0px 0px 0px;
+        padding: 2%;
+        font-size: 20px;
+    }
+
+
+    .navigation h3 {
+        font-size: 20px;
+        margin-bottom: 20%;
+    }
+    
+    .navigation ul a {
+        font-size: 18px;
+    }
+
+    .navigation li {
+        margin-bottom: 10%;
+    }
+
+    .navigation .info {
+        padding-right: 10%;
+    }
+}

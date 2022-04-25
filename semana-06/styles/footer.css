@@ -1,0 +1,28 @@
+footer {
+    display: flex;
+    padding: 16px 0;
+    font-size: 9px;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 10%;
+}
+
+span i {
+    font-size: 1px;
+    padding: 5px;
+    margin-bottom: 1%;
+    color: gray;
+}
+.direc {
+    color:#50a780;
+}
+
+@media screen and(min-width:768px) {
+    footer {
+        font-size: 24px;
+        justify-content: flex-end;
+    }
+}
+
