@@ -8,7 +8,7 @@ aside {
     aside {
         display: flex;
         flex-direction: column;
-        width: 20%;
+        width: 15%;
         padding-left: 15px;
         font-family: 'Roboto', sans-serif;
         background: linear-gradient(to bottom, #50a780,#50a780, #ffffff);
@@ -16,7 +16,7 @@ aside {
     
     aside h4 {
         padding-top: 20px;
-        font-size: 30px;
+        font-size: 150%;
         padding-bottom: 15px;
         border-bottom: 1px solid #ED2626;
         width: 70%;
@@ -32,7 +32,6 @@ aside {
         color: #000;
     }
     aside .menu li {
-        font-size: 28px;
         margin: 10px 0px 10px 0px;
         text-shadow: 0px 1px 1px #505168;
         padding-bottom: 10px;
@@ -50,33 +49,33 @@ aside {
 
     aside .contact-us p {
         padding-top: 15px;
-        font-size: 26px;
+        font-size: 100%;
         line-height: 30px;
     }
 
     aside .contact-us i {
-        font-size: 24px;
+        font-size: 80%;
         color: #505168;
         text-shadow: 0px 1px 1px #505168;
     }
 
     aside .tracking {
         width:80%;
-        font-size: 24px;
+        font-size: 80%;
         padding-bottom: 15px;
         border-bottom: 1px solid #CECACA;
     }
 
     aside .address {
         margin-top: 15px;
-        font-size: 24px;
+        font-size: 80%;
         padding-bottom: 100px;    
     }
     button {
         width: 90%;
         background-color: #49A37B;
         border-radius: 5px;
-        font-size: 23px;
+        font-size: 80%;
         color: #fff;
         padding: 4%;
         border: #000 1px solid;

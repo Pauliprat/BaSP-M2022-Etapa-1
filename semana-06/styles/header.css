@@ -19,7 +19,11 @@ header .navegate {
     display: none;
 }
 
-header .buttons {
+header a {
+    text-decoration: none;
+}
+
+header .buttons{
     display: flex;
     width: 240px;
     justify-content: space-around;

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../styles/login.css">
     <link rel="stylesheet" href="../styles/footer.css">
+    <script src="../javascript/login.js"></script>
     
     
 </head>
@@ -27,8 +28,8 @@
             <a href="">Tutorials | Contact</a>
         </div>   
         <div class="buttons">
-            <button>Login</button>
-            <button>SignUp</button>
+            <button><a href="index.html">Home</a></button>
+            <button><a href="employee-signup.html">SignUp</a></button>
         </div>
         <div class="search">
             <div class="input">
@@ -56,10 +57,10 @@
         <form class="login-signup-form"> 
             <div id= "form-login" class="form">
                 <label>Email</label>
-                <input type="text" placeholder="Email">
+                <input type="text" class ="email"  placeholder="Email">
                 <span class="error">Wrong email.</span>
                 <label>Password</label>
-                <input type="text" placeholder="Password">
+                <input id ="password" type="text" placeholder="Password">
                 <span class="error">Wrong password.</span>
             </div>
             <div id="remembrer-forgot" class="form">
