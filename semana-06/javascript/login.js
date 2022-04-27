@@ -1,39 +1,35 @@
-// var form = document.getElementsByClassName('login-signup-form');
-// var inputs = document.querySelectorAll(''); 
-// console.log(form);
-// console.log(inputs)
+function emailValidation(email){
+  var validateEmail = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
+  return validateEmail.test(email);
+}
 
-// var validateForm = () => {
-//     console.log('sicñor');
-// }
-
-// inputs.forEach((input) => {
-//     input.addEventListener('blur', validateForm);
-// });
-
-
-function validateInputEmail(input){
-    var validateEmail = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
-     return validateEmail.test(input);
+function passwordValidation (password){
+  var validatePassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,15}/;
+  return  validatePassword.test(password);
 }
 
 window.onload = function(){
-
-  var errorMenssages = document.getElementsByClassName('error');
-  var email = document.getElementsByClassName('email');
-  var errorMail = errorMenssages[0];
-
-  function showMailError(){
-    if (validateInputEmail(email.value) == false){
-      errorMail.style.visibility = 'visible';
-      email.classList ='invalid-input';
-    }
+var email = document.getElementById('email');
+var errorEmail = document.getElementById('email-error');
+  email.addEventListener("blur", emailMenssage);
+  function emailMenssage(){
+    if (emailValidation(email.value) == false) {
+      return errorEmail.style.visibility = "visible";
+   }
   }
-email.addEventListener('blur', showMailError);
+  email.addEventListener("focus", function() {
+  errorEmail.style.visibility = "hidden";
+})
 
-  function hideMailError(){
-  errorMail.style.visibility ='hiden';
-  email.classList = 'invalid-input'
-
+var password = document.getElementById('password');
+var errorPassword = document.getElementById('password-error');
+  password.addEventListener("blur", passwordMenssage);
+  function passwordMenssage(){
+    if (passwordValidation(password.value) == false) {
+      return errorPassword.style.visibility = "visible";
+   }
   }
+  password.addEventListener("focus", function() {
+  errorPassword.style.visibility = "hidden";
+})
 }
