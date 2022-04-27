@@ -32,4 +32,17 @@ var errorPassword = document.getElementById('password-error');
   password.addEventListener("focus", function() {
   errorPassword.style.visibility = "hidden";
 })
+
+var loginButton = document.getElementById('login-button');
+function login() {
+  alert ("Emai or password are invalid")
 }
+loginButton.addEventListener('click', login);
+
+var forgotPassword = document.getElementById('forgot-password');
+function forgotYorPasword (){
+  alert("New password has been sent to your email")
+}
+forgotPassword.addEventListener('click', forgotYorPasword);
+}
+
