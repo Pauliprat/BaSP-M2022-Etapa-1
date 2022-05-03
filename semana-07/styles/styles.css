@@ -1,0 +1,89 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5%;
+    color: #373867;
+    width: 100%;
+}
+
+.title-and-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.title-and-logo .logo {
+    order: 1;
+}
+.title-and-logo .title {
+    order: 2;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+.title h1 {
+    font-size: 24px;
+    margin-left: 10px;
+    letter-spacing: 3px;
+}
+.title h3 {
+    font-size: 10px;
+    margin-left: 34px;
+    letter-spacing: 1px;
+} 
+
+.login-signup-form{
+    width: 50%;
+}
+.form1, .form2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+label {
+    padding-top: 4%;
+    font-size: 80%;
+    width: 100%;
+
+}
+button {
+    background: #aace9b;
+    border: none;
+    margin-top: 15%;
+    padding: 2%;
+    font-size: 70%;
+    border-radius: 6%;
+    width: 30%;
+    color: #373867;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    font-size: 60%;
+    padding: 2% 0% 2% 2%;
+    margin: 1% 0 1% 0;
+}
+
+.error{
+    font-size: 70%;
+    color: red;
+    visibility: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+    form .login-signup-form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-align: start;
+    flex-wrap: nowrap;
+    margin: 6%;
+    }
+}

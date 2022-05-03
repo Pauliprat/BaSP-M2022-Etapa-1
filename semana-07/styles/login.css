@@ -1,0 +1,31 @@
+#forgot-password {
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+form #remembrer-forgot {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#forgot-password{ 
+    font-size: 60%;
+    width: 100%;
+    color: #373867;
+}
+.login-button {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+.checkbox{
+    width: 10%;
+    margin: 0;
+}
