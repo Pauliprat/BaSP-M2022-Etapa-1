@@ -3,83 +3,89 @@ function emailValidation(email){
   return validateEmail.test(email);
 }
 
-function passwordValidation (string){
-  var abc=false;
-  var num=false;
-  for (var index = 0; index < string.length; index++) {
-      var element = string[index];  
-       if (isNaN(element)==true) {
-       abc=true;
-       }
-       if(isNaN(element)==false){
-       num=true;
-       } 
-      return abc && num;
-      }
-
+function passwordValidation (password){
+  return validateHasNumber(password) && validateHasLetter(password) && validateLength(password);
 } 
 
-function validatePassword8(string){
-  long = false;
-  if (string.length>=8) {
-      longEnough=true;      
-  }      
-  return long;
-}  
+function validateHasNumber(password){
+  for (var i = 0; i < password.length; i++){
+    if (isNaN(password[i])){
+      return true;
+    }
+  }
+  return false;
+}
+
+function validateHasLetter(password){
+  for (var i = 0; i < password.length; i++){
+    if (!isNaN(password[i])){
+      return true;
+    }
+  }
+  return false;
+}
+
+function validateLength(password){
+  return password.length>=8;
+}
+
+function login(email, password){
+  var loginURL = "https://basp-m2022-api-rest-server.herokuapp.com/login";
+  fetch(loginURL + "?email=" + email + "&password=" + password)
+    .then(function (response) {
+      return response.json()
+    })
+    .then(function (data) {
+      alert(data.msg);
+    });  
+}
 
 window.onload = function(){
 
-    // MESAJES DE ERROR PARA MAIL
+  // MESAJES DE ERROR PARA MAIL
   var email = document.getElementById('email');
   var errorEmail = document.getElementById('email-error');
-  email.addEventListener("blur", emailmessge);
-  function emailmessge(){
+
+  email.addEventListener("blur", function(){
     if (!emailValidation(email.value)) {
       errorEmail.style.visibility = "visible";
     }
-  }
+  });
+  email.addEventListener("focus", function(){
+    errorEmail.style.visibility = "hidden"; 
+  })
 
-  function emailMessageFocus (){
-      errorEmail.style.visibility = "hidden"; 
-    }
-    email.addEventListener("focus", emailMessageFocus)
-
- // MESAJES DE ERROR PARA PASSWORD
+  // MESAJES DE ERROR PARA PASSWORD
   var password = document.getElementById('password');
   var errorPassword = document.getElementById('password-error');
-  password.addEventListener("blur", passwordmessge);
-  function passwordmessge(){
+  
+  password.addEventListener("blur", function(){
     if (!passwordValidation(password.value)) {
       errorPassword.style.visibility = "visible";
     }
-  }
-  function passwordMessageFocus (){
+  });
+  password.addEventListener("focus", function(){
     errorPassword.style.visibility = "hidden"; 
-  }
-  email.addEventListener("focus", passwordMessageFocus)
+  })
 
-  //***********AVISOS ERROR******************** */
+  // AVISOS ERROR
   var loginButton = document.getElementById('login-button');
-  loginButton.addEventListener('click', onSubmit);
-  function onSubmit() {
-    if ( emailValidation(email.value) && passwordValidation(password.value)){
-      alert("funciona");
+  loginButton.addEventListener('click', function() {
+    if (emailValidation(email.value) && passwordValidation(password.value)){
+      login(email.value, password.value);
     } else {
-        if (!emailValidation(email.value)) {
-          alert("no funciona mail");
-        }
-        if (!passwordValidation(password.value)){
-          alert("no funciona password");
-        }
+      if (!emailValidation(email.value)) {
+        alert("Invalid email");
       }
-  }
-  
+      if (!passwordValidation(password.value)){
+        alert("Invalid password");
+      }
+    }
+  });
+
   var forgotPassword = document.getElementById('forgot-password');
-function forgotYorPasword (){
-  alert("New password has been sent to your email")
+  forgotPassword.addEventListener('click', function(){
+    alert("New password has been sent to your email")
+  });
+
 }
-forgotPassword.addEventListener('click', forgotYorPasword);
-}
-
-
-
